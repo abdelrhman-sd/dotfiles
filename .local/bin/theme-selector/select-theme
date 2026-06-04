@@ -1,0 +1,11 @@
+#!/bin/bash
+choice=$(find ~/.config/colorschemes -maxdepth 1 -mindepth 1 -type d |
+  sed 's|.*/||' |
+  rofi -theme ~/.config/rofi/types/1/design-3.rasi -dmenu -p "Theme:" 2>/dev/null)
+
+[[ -z "$choice" ]] && exit 0
+
+script_dir="$(dirname "$(realpath "$0")")"
+for theme_module in "$script_dir/theme-modules"/*; do
+  bash "$theme_module" "$choice"
+done
