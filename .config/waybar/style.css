@@ -1,0 +1,64 @@
+@import "../colorschemes/monochrome/shared/colors.css";
+
+* {
+  font-family: "Rubik", "JetBrainsMono Nerd Font", "Noto Sans CJK JP", "Noto Sans CJK KR";
+  font-size: 14px;
+}
+
+/* ── Bar ───────────────────────────────────────────── */
+window#waybar {
+  background: transparent;
+}
+
+/* ── Module pills ──────────────────────────────────── */
+.modules-left > *, .modules-center > *, .modules-right > * {
+  background-color: @bg0;
+  color:            @fg;
+  border-radius:    99px;
+}
+
+.modules-left > * label, .modules-right > * label, #clock {
+  padding: 0.5rem 1.5rem;
+}
+
+/* ── Workspaces ────────────────────────────────────── */
+#workspaces {
+  padding: 8px 15px;
+}
+
+#workspaces button {
+  margin:             0 4px;
+  border-radius:      99px;
+  background-color:   @bg1;
+  transition:         all 0.2s ease-in-out;
+}
+
+#workspaces button.empty {
+  color: gray;
+}
+
+#workspaces button.active {
+  background-color: @grey2;
+  min-width: 3rem;
+  font-weight: 400;
+  color: @bg0;
+}
+
+/* ── Pulseaudio ────────────────────────────────────── */
+#pulseaudio {
+  min-width: 4rem;
+}
+
+/* ── Tooltip ───────────────────────────────────────── */
+tooltip {
+  background-color: @bg1;
+  color: @fg;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+tooltip box {
+  margin: 0 10px;
+}

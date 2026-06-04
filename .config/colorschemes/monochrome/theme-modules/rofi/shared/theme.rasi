@@ -1,0 +1,27 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Colors
+ **/
+* {
+    background:     #121212FF;
+    background-alt: #1e1e1eFF;
+    foreground:     #e6e6e6FF;
+    selected:       #9ca8b0FF;
+    active:         #b0ada0FF;
+    urgent:         #b0a0a5FF;
+}
+
+inputbar {
+  margin:           20px 0;
+  padding:          14px;
+  border:           2px solid;
+  border-radius:    10px;
+  border-color:     @border-colour;
+}
+
+element {
+    padding: 14px;
+}
