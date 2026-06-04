@@ -34,7 +34,7 @@ window#waybar {
 }
 
 #workspaces button.empty {
-  color: gray;
+  color: @grey0;
 }
 
 #workspaces button.active {
