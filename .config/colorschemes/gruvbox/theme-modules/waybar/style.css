@@ -43,13 +43,31 @@ tooltip box {
   color: gray;
 }
 
-#language {
-  background-color: @yellow;
+#custom-power {
   margin: 5px;
-  padding: 0 10px;
+  min-width: 2rem;
+  background-color: @yellow;
+  padding: 0 10px 0 15px;;
   border-radius: 99px;
   color: @bg0;
-  font-weight: 400;
+}
+
+menu {
+  border-radius: 15px;
+  background: @bg1;
+  color: @grey0;
+  padding: 10px;
+  border: none;
+}
+menuitem {
+  margin: .1rem 0;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+menuitem:hover {
+  background-color: @yellow;
+  color: @bg0;
 }
 
 #pulseaudio {
@@ -60,5 +78,5 @@ tooltip box {
   background-color: @yellow;
   min-width: 3rem;
   font-weight: 400;
-  color: @bg0;
+  color: black;
 }

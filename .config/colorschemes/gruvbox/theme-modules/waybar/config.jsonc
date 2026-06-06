@@ -9,7 +9,8 @@
     "network",
     "memory",
     "cpu",
-    "hyprland/language"
+    "hyprland/language",
+    "custom/power"
   ],
 
   "sway/window": {
@@ -28,6 +29,19 @@
     "format-en": "US",
     "format-ar": "AR",
     "on-click": "hyprctl switchxkblayout keyd-virtual-keyboard next"
+  },
+
+  "custom/power": {
+    "format" : "⏻ ",
+    "menu": "on-click",
+    "menu-file": "~/.config/waybar/power_menu.xml",
+    "menu-actions": {
+      "lock": "hyprlock",
+      "shutdown": "doas shutdown now",
+      "reboot": "reboot",
+      "suspend": "systemctl suspend",
+      "hibernate": "systemctl hibernate",
+    },
   },
 
   "hyprland/workspaces": {
@@ -99,7 +113,7 @@
   },
   "cpu": {
     "interval": 10,
-    "format": "   {}%",
+    "format": "   {usage}%",
     "max-length": 10
   },
 }
