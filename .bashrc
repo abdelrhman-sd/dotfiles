@@ -3,6 +3,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# Enabling VIM Mode
+set -o vi
+
 alias ls='ls --color=auto'
 
 # Track if it's the first command
