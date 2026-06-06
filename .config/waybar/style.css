@@ -62,3 +62,20 @@ tooltip {
 tooltip box {
   margin: 0 10px;
 }
+
+menu {
+    border-radius: 15px;
+    background: @grey2;
+    color: @bg0;
+    padding: 10px;
+    border: none;
+}
+menuitem {
+  margin: .1rem 0;
+  border-radius: 10px;
+}
+
+menuitem:hover {
+  background-color: @bg0;
+  color: @fg;
+}
