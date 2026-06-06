@@ -27,4 +27,4 @@ alias ...="cd ../.."
 alias vi="nvim"
 
 #.dotfiles
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias .f='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
