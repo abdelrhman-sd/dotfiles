@@ -49,6 +49,10 @@ window#waybar {
   min-width: 4rem;
 }
 
+#custom-power {
+  padding-left: 25px;
+}
+
 /* ── Tooltip ───────────────────────────────────────── */
 tooltip {
   background-color: @bg1;
