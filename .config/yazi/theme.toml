@@ -1,0 +1,50 @@
+
+# REMOVED the [flavor] block to fix the "No such file or directory" error.
+# Yazi will now safely apply these monochrome rules over the system defaults.
+
+[status]
+progress_label = { fg = "white", bg = "black", bold = true }
+progress_normal = { fg = "black", bg = "gray" }
+progress_error = { fg = "black", bg = "red" }
+
+[manager]
+cwd = { fg = "white", bg = "black" }
+hovered = { fg = "black", bg = "white", bold = true }
+find_keyword = { fg = "black", bg = "white" }
+find_value = { fg = "white", bg = "black" }
+
+[select]
+active = { fg = "black", bg = "white", bold = true }
+inactive = { fg = "white", bg = "black" }
+
+[input]
+border = { fg = "gray" }
+title = { fg = "white" }
+value = { fg = "white", bg = "black" }
+selected = { fg = "black", bg = "white" }
+
+[completion]
+border = { fg = "gray" }
+active = { fg = "black", bg = "white", bold = true }
+inactive = { fg = "white", bg = "black" }
+icon = { fg = "white" }
+
+[help]
+on = { fg = "white", bold = true }
+run = { fg = "gray" }
+desc = { fg = "white" }
+hovered = { fg = "black", bg = "white", bold = true }
+footer = { fg = "gray" }
+
+[icon]
+# Blanking out default specific extension databases
+globs = []
+dirs  = []
+files = []
+exts  = []
+
+# Overwriting the main conds array directly
+conds = [
+  { if = "dir",  text = "  ", fg = "#b9bdc2" },
+  { if = "!dir", text = "  ", fg = "#b9bdc2" }
+]
