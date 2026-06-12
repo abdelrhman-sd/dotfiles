@@ -66,4 +66,10 @@ return {
     --  })
     --end,
   },
+
+  {
+    "marko-cerovac/material.nvim",
+    lazy = false,
+    priority = 1000,
+  },
 }
