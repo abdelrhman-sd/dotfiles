@@ -11,9 +11,19 @@ alias qs="doas xbps-query"
 #Git
 alias gs='git status'
 alias gp='git push'
-alias gpl='git pull'
-alias gpo='git push origin'
-alias glo='git pull origin'
+alias gl='git pull'
+alias gc='git commit -m'
+alias gc-a='git commit -am'
+alias gp-o='git push origin'
+alias gl-o='git pull origin'
+
+#.dotfiles
+alias .f='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias .fs='.f status'
+alias .fa='.f add'
+alias .fp='.f push'
+alias .fc='.f commit -m'
+alias .fc-a='.f commit -am'
 
 #Runit services
 alias sv_str="doas sv start"
@@ -33,8 +43,6 @@ alias ...="cd ../.."
 #Nvim
 alias vi="nvim"
 
-#.dotfiles
-alias .f='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 #flatpak
 alias fp="flatpak"
