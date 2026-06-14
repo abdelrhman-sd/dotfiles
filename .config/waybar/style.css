@@ -18,12 +18,12 @@ window#waybar {
 }
 
 .modules-left > * label, .modules-right > * label, #clock {
-  padding: 0.5rem 1.5rem;
+  padding: 0rem 1.5rem;
 }
 
 /* ── Workspaces ────────────────────────────────────── */
 #workspaces {
-  padding: 8px 15px;
+  padding: 10px 10px;
 }
 
 #workspaces button {
