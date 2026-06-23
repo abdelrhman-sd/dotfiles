@@ -98,9 +98,10 @@ return {
           keyword_exception = "default",
         },
         tweak_background = {
-          telescope = "default",
-          menu = "default",
-          popup = "default",
+          normal = "none",
+          telescope = "none",
+          menu = "none",
+          popup = "none",
         },
       })
 
