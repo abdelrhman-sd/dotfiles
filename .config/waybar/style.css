@@ -18,7 +18,7 @@ window#waybar {
 }
 
 .modules-left > * label, .modules-right > * label, #clock {
-  padding: 0rem 1.5rem;
+  padding: 0rem 1rem;
 }
 
 /* ── Workspaces ────────────────────────────────────── */
@@ -39,7 +39,7 @@ window#waybar {
 
 #workspaces button.active {
   background-color: @grey2;
-  min-width: 3rem;
+  min-width: 2rem;
   font-weight: 400;
   color: @bg0;
 }
@@ -50,7 +50,7 @@ window#waybar {
 }
 
 #custom-power {
-  padding-left: 25px;
+  padding: 1rem 1.3rem 1rem 1.6rem;
 }
 
 /* ── Tooltip ───────────────────────────────────────── */
